@@ -1,4 +1,4 @@
 git add .
-git commit -m "first commit"
+git commit --amend --no-edit
 git push -u origin master
  
