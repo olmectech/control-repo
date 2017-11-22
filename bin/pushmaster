@@ -1,4 +1,8 @@
 git add .
+<<<<<<< HEAD:bin/pushmaster
 git commit --amend --no-edit
+=======
+git commit --amend
+>>>>>>> 68791587b33f50d846c045df6f1469e871c6c1f0:bin/pushmaster
 git push -u origin master
  
