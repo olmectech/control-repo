@@ -1,4 +1,4 @@
 git add .
-git commit -m "new commit"
+git commit -m "second commit"
 git push -u origin RHEL6 
  
