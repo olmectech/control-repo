@@ -5,7 +5,7 @@ node {
       // Get input for OS type
 
       def OS = input message: 'What OS would you like to test?', \
-               parameters: [choice(choices: 'RHEL5\nRHEL6\nRHEL7\nWindows\nAIX', \
+               parameters: [choice(choices: 'AIX\nRHEL5\nRHEL6\nRHEL7\nWindows', \
                description: '', \
                name: 'OS')]
 
