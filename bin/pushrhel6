@@ -1,7 +1,6 @@
 #!/bin/bash
 
-cd /root/control-repo
-/usr/bin/git checkout RHEL6
-/usr/bin/git add .
+cd /home/control-repo
+/usr/bingit add . ; /usr/bin/git commit -am "message"
 /usr/bin/git push -u origin RHEL6 
  
