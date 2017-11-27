@@ -22,8 +22,8 @@ node {
         }
         
         if (OS == 'RHEL6') {
-            git branch: 'RHEL6', url: 'https://github.com/olmectech/control-repo.git'
             sh('/home/bin/pushrhel6')
+            git branch: 'RHEL6', url: 'https://github.com/olmectech/control-repo.git'
         }
 
         if (OS == 'RHEL7') {
