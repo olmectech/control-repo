@@ -18,6 +18,7 @@ node {
       echo "You have selected: ${OS}"
 
         if (OS == 'RHEL5') {
+            sh('/home/bin/pushrhel5')
             git branch: 'RHEL5', url: 'https://github.com/olmectech/control-repo.git'
         }
         
@@ -27,14 +28,17 @@ node {
         }
 
         if (OS == 'RHEL7') {
+            sh('/home/bin/pushrhel7')
             git branch: 'RHEL7', url: 'https://github.com/olmectech/control-repo.git'
         }
 
         if (OS == 'Windows') {
+            sh('/home/bin/pushwin')
             git branch: 'Windows', url: 'https://github.com/olmectech/control-repo.git'
         }
 
         if (OS == 'AIX') {
+            sh('/home/bin/pushaix')
             git branch: 'AIX', url: 'https://github.com/olmectech/control-repo.git'
         }
 
