@@ -1,4 +1,7 @@
-git add .
-git commit -m "new commit"
-git push -u origin master
+#!/bin/bash
+
+cd /root/control-repo
+/usr/bin/git checkout RHEL6
+/usr/bin/git add .
+/usr/bin/git push -u origin RHEL6 
  

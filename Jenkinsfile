@@ -5,7 +5,7 @@ node {
       // Get input for OS type
 
       def OS = input message: 'What OS would you like to test?', \
-               parameters: [choice(choices: 'AIX\nRHEL5\nRHEL6\nRHEL7\nWindows', \
+               parameters: [choice(choices: 'RHEL5\nRHEL6\nRHEL7\nWindows\nAIX', \
                description: '', \
                name: 'OS')]
 
@@ -23,6 +23,7 @@ node {
         
         if (OS == 'RHEL6') {
             git branch: 'RHEL6', url: 'https://github.com/olmectech/control-repo.git'
+            sh('/root/control-repo/bin/pushrhel6')
         }
 
         if (OS == 'RHEL7') {
