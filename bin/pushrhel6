@@ -1,6 +1,0 @@
-#!/bin/bash
-
-cd /home/control-repo
-/usr/bin/git add . ; /usr/bin/git commit -am "message"
-/usr/bin/git push -u origin RHEL6 
- 
